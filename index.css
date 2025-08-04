@@ -1,0 +1,104 @@
+:root {
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+
+    /** Theme primary colors */
+    --clr-primary-a0: #ff6200;
+    --clr-primary-a10: #ff762b;
+    --clr-primary-a20: #ff8847;
+    --clr-primary-a30: #ff9a61;
+    --clr-primary-a40: #ffab7b;
+    --clr-primary-a50: #ffbc95;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #001221;
+    --clr-surface-a10: #1b2836;
+    --clr-surface-a20: #343f4c;
+    --clr-surface-a30: #4e5763;
+    --clr-surface-a40: #69717b;
+    --clr-surface-a50: #858b94;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #201b22;
+    --clr-surface-tonal-a10: #353037;
+    --clr-surface-tonal-a20: #4b464c;
+    --clr-surface-tonal-a30: #625e63;
+    --clr-surface-tonal-a40: #7a777b;
+    --clr-surface-tonal-a50: #939094;
+
+    font-family: "ui-monospace", sans-serif;
+    background: var(--clr-surface-a0);
+    color: var(--clr-light-a0);
+    padding: 10px;
+    font-size: 15px;
+
+
+}
+
+.todoCard {
+    color: var(--clr-light-a0);
+    background: var(--clr-surface-a10);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    text-indent: 10px;
+}
+
+.todoCardDetails {
+    color: var(--clr-light-a0);
+    background: transparent;
+    border-style: inset;
+    border-radius: 15px;
+    height: 140px;
+    width: 180px;
+    padding: 10px;
+    resize: none;
+}
+
+.todoCardDetailsDone {
+    color: var(--clr-light-a0);
+    background: transparent;
+    border-style: inset;
+    border-radius: 15px;
+    height: 140px;
+    width: 180px;
+    padding: 10px;
+    resize: none;
+    text-decoration: line-through var(--clr-primary-a0) 2px;
+}
+
+.done {
+    color: var(--clr-primary-a50);
+    text-decoration: line-through var(--clr-primary-a0) 2px;
+}
+
+.todoInput {
+    color: var(--clr-primary-a30);
+    background: var(--clr-surface-a10);
+    border-radius: 15px;
+    width: 80%;
+    height: 20px;
+    border-style: none;
+    text-align: start;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.confirmationArea {
+    color: var(--clr-light-a0);
+    background: var(--clr-surface-a10);
+    width: 230px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.confirmButton {
+    color: var(--clr-primary-a50);
+    background: var(--clr-surface-a20);
+    border-radius: 15px;
+    border-style: none;
+    width: 50px;
+    height: 30px;
+}
