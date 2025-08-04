@@ -37,14 +37,14 @@
 }
 
 .todoCardHolder {
-    display: flex;            /* Use flexbox layout */
-    flex-wrap: wrap;          /* Wrap to next row when running out of space */
-    overflow-y: auto;         /* Enable vertical scrolling if content height exceeds container */
-    max-height: 1000px;        /* Set a fixed height for scrolling area (adjust as needed) */
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 1000px;
+    min-height: 240px;
     row-gap: 50px;
-    column-gap: 5px;/* Space between cards */
+    column-gap: 5px;
     padding: 10px;
-    border: 1px solid #ccc;   /* Optional, for visual clarity */
 }
 
 .todoCard {
