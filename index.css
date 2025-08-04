@@ -41,36 +41,27 @@
     background: var(--clr-surface-a10);
     width: 200px;
     height: 200px;
-    padding: 10px;
     border-radius: 15px;
-    text-indent: 10px;
 }
 
 .todoCardDetails {
     color: var(--clr-light-a0);
     background: transparent;
-    border-style: inset;
     border-radius: 15px;
-    height: 140px;
-    width: 180px;
-    padding: 10px;
+    height: 195px;
+    width: 195px;
     resize: none;
+    text-indent: 5px;
 }
 
 .todoCardDetailsDone {
     color: var(--clr-light-a0);
     background: transparent;
-    border-style: inset;
     border-radius: 15px;
-    height: 140px;
-    width: 180px;
-    padding: 10px;
+    height: 195px;
+    width: 195px;
     resize: none;
-    text-decoration: line-through var(--clr-primary-a0) 2px;
-}
-
-.done {
-    color: var(--clr-primary-a50);
+    text-indent: 5px;
     text-decoration: line-through var(--clr-primary-a0) 2px;
 }
 
@@ -86,19 +77,11 @@
     font-size: 15px;
 }
 
-.confirmationArea {
-    color: var(--clr-light-a0);
-    background: var(--clr-surface-a10);
-    width: 230px;
-    padding: 10px;
-    border-radius: 15px;
-}
-
 .confirmButton {
     color: var(--clr-primary-a50);
-    background: var(--clr-surface-a20);
+    background: var(--clr-surface-a10);
     border-radius: 15px;
     border-style: none;
-    width: 50px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
 }
