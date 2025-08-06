@@ -36,6 +36,18 @@
 
 }
 
+.todoInput {
+    color: var(--clr-primary-a30);
+    background: var(--clr-surface-a10);
+    border-radius: 15px;
+    width: 80%;
+    height: 20px;
+    border-style: none;
+    text-align: start;
+    padding: 10px;
+    font-size: 15px;
+}
+
 .todoCardHolder {
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +59,19 @@
     padding: 10px;
 }
 
+.doneCardHolder {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 1000px;
+    min-height: 240px;
+    row-gap: 50px;
+    column-gap: 5px;
+    padding: 10px;
+}
+
 .todoCard {
+    position: relative;
     color: var(--clr-light-a0);
     background: var(--clr-surface-a10);
     width: 200px;
@@ -76,23 +100,46 @@
     text-decoration: line-through var(--clr-primary-a0) 2px;
 }
 
-.todoInput {
-    color: var(--clr-primary-a30);
-    background: var(--clr-surface-a10);
+.todoCardDoneButton {
+    opacity: 0;
+    pointer-events: none;
+
+    position: absolute;
+    bottom: -1px;
     border-radius: 15px;
-    width: 80%;
-    height: 20px;
     border-style: none;
-    text-align: start;
-    padding: 10px;
-    font-size: 15px;
+    width: 200px;
+    height: 40px;
+    color: var(--clr-primary-a50);
+    background: var(--clr-surface-a20);
+
+    transition: opacity 0.5s ease;
 }
 
-.confirmButton {
-    color: var(--clr-primary-a50);
-    background: var(--clr-surface-a10);
+.todoCard:hover .todoCardDoneButton {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.todoCardRemoveButton {
+    opacity: 0;
+    pointer-events: none;
+
+    position: absolute;
+    top: 1px;
+    right: 1px;
     border-radius: 15px;
     border-style: none;
-    width: 100px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
+    color: var(--clr-primary-a10);
+    background: var(--clr-surface-a10);
+
+    transition: opacity 0.5s ease;
 }
+
+.todoCard:hover .todoCardRemoveButton {
+    opacity: 1;
+    pointer-events: auto;
+}
+
